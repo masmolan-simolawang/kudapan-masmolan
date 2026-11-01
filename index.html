@@ -1,8 +1,14 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#197b49">
+<title>APLIKASI KUDAPAN MasMolan</title>
+
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -12,10 +18,7 @@ body {
 }
 
 header {
-  background:
-    radial-gradient(circle at 15% 20%, #e9c65d 0 5%, transparent 6%),
-    radial-gradient(circle at 85% 30%, #f5a64a 0 6%, transparent 7%),
-    linear-gradient(135deg, #197b49, #105c36);
+  background: linear-gradient(135deg, #197b49, #105c36);
   color: white;
   text-align: center;
   padding: 28px 15px;
@@ -23,7 +26,7 @@ header {
 
 .logo {
   font-size: 55px;
-  background: #ffffff;
+  background: white;
   border-radius: 50%;
   width: 85px;
   height: 85px;
@@ -33,14 +36,8 @@ header {
   justify-content: center;
 }
 
-h1 {
-  font-size: 23px;
-  margin: 14px 0 8px;
-}
-
-header p {
-  color: #fff1c6;
-}
+h1 { font-size: 23px; margin: 14px 0 8px; }
+header p { color: #fff1c6; }
 
 main {
   width: 100%;
@@ -50,7 +47,7 @@ main {
 }
 
 .card {
-  background: #ffffff;
+  background: white;
   border-radius: 18px;
   padding: 20px;
   box-shadow: 0 4px 15px #8b70401a;
@@ -58,9 +55,7 @@ main {
   border: 1px solid #f2e7d3;
 }
 
-h2, h3 {
-  color: #197b49;
-}
+h2, h3 { color: #197b49; }
 
 button {
   background: #e58a27;
@@ -74,19 +69,11 @@ button {
   cursor: pointer;
 }
 
-button:active {
-  transform: scale(.98);
-}
-
 iframe {
   width: 100%;
-  min-height: 1100px;
+  height: 1100px;
   border: 0;
   display: block;
-}
-
-#form {
-  overflow: hidden;
 }
 
 footer {
@@ -96,33 +83,53 @@ footer {
   font-size: 12px;
 }
 
-/* Tampilan khusus HP */
-@media screen and (max-width: 600px) {
-  header {
-    padding: 23px 12px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  main {
-    padding: 10px;
-    margin: 12px auto;
-  }
-
-  .card {
-    padding: 15px;
-    border-radius: 14px;
-  }
-
-  iframe {
-    min-height: 1400px;
-  }
-
-  button {
-    font-size: 15px;
-    padding: 14px;
-  }
+@media (max-width: 600px) {
+  header { padding: 23px 12px; }
+  h1 { font-size: 20px; }
+  main { padding: 10px; margin: 12px auto; }
+  .card { padding: 15px; border-radius: 14px; }
+  iframe { height: 1400px; }
+  button { font-size: 15px; padding: 14px; }
 }
 </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🥗</div>
+  <h1>APLIKASI KUDAPAN MasMolan</h1>
+  <p>Puskesmas Simolawang · 2027</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Selamat Datang, Kader Posyandu</h2>
+    <p>Mari dukung balita sehat melalui pemberian kudapan bergizi.</p>
+    <button onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">
+      MULAI ISI FORMULIR
+    </button>
+  </div>
+
+  <div class="card" id="form">
+    <h3>Formulir Intervensi Kudapan 2027</h3>
+    <iframe
+      title="Formulir KUDAPAN 2027"
+      src="https://docs.google.com/forms/d/e/1FAIpQLScF84i31IkAfDfdS028xNYW0U7p2hyXLdQJBpHP_ft9dDobZQ/viewform?embedded=true">
+    </iframe>
+    <p>
+      Jika formulir tidak muncul, 
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScF84i31IkAfDfdS028xNYW0U7p2hyXLdQJBpHP_ft9dDobZQ/viewform" target="_blank">
+        klik di sini untuk membuka formulir.
+      </a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  APLIKASI KUDAPAN MasMolan<br>
+  Puskesmas Simolawang
+</footer>
+
+</body>
+</html>
