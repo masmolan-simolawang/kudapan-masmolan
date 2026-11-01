@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16834a">
+<title>APLIKASI KUDAPAN MasMolan</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f7f2;
+  color: #183126;
+}
+header {
+  background: #16834a;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+.logo {
+  font-size: 55px;
+}
+h1 { font-size: 22px; }
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 12px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 3px 12px #0001;
+  margin-bottom: 15px;
+}
+button {
+  background: #16834a;
+  color: white;
+  border: 0;
+  padding: 14px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+iframe {
+  width: 100%;
+  height: 850px;
+  border: 0;
+}
+footer {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🥗</div>
+  <h1>APLIKASI KUDAPAN MasMolan</h1>
+  <p>Puskesmas Simolawang · 2027</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Selamat Datang, Kader Posyandu</h2>
+    <p>
+      Silakan mengisi laporan kegiatan intervensi
+      kudapan balita melalui formulir berikut.
+    </p>
+    <button onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">
+      MULAI ISI FORMULIR
+    </button>
+  </div>
+
+  <div class="card" id="form">
+    <h3>Formulir Intervensi Kudapan 2027</h3>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScF84i31IkAfDfdS028xNYW0U7p2hyXLdQJBpHP_ft9dDobZQ/viewform?embedded=true">
+      Memuat formulir...
+    </iframe>
+  </div>
+</main>
+
+<footer>
+  APLIKASI KUDAPAN MasMolan<br>
+  Puskesmas Simolawang
+</footer>
+
+</body>
+</html>
